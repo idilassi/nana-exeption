@@ -10,7 +10,7 @@ pipeline {
             stage("test") {
                 when {
                      expression {
-                        BRANCHE_NAME == 'master' || BRANCHE_NAME == 'dev'
+                        BRANCHE_NAME == 'master' || BRANCHE_NAME == 'main'
                      }
                 }
               steps {
